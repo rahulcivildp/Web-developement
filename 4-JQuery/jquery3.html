@@ -1,0 +1,32 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <style>
+            #cicle {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border-radius: 100%;
+                margin: 0 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cicle"></div>
+   
+        
+        <script type="text/javascript">
+        
+            $("#cicle").click(function(){
+                
+                $("#cicle").css("background-color", "blue");
+                $("#cicle").css("border-radius", "0%");
+                alert($("body").css("width"))
+                
+            })
+            
+        </script>
+    </body>
+</html>

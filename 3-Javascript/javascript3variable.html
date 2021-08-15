@@ -1,0 +1,23 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+   
+    
+    </head>
+    <body>
+        <input id="change" type="text" value="something">
+        <button id="something" >Change the text!</button>
+        <p id="empty">This is some text</p>
+        
+    <script type="text/javascript">
+        
+        
+        document.getElementById("something").onclick = function(){
+            var x = "";
+            x = document.getElementById("change").value;
+            document.getElementById("empty").innerHTML = x + document.getElementById("empty").innerHTML;
+        }
+    </script>
+    </body>
+</html> 

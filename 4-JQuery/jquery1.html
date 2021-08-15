@@ -1,0 +1,51 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <style>
+            #cicle {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border-radius: 100%;
+                float: left;
+                margin: 0 20px;
+            }
+            .rectanle {
+                width: 100px;
+                height: 100px;
+                background-color: aqua;
+                float: left;
+                margin: 0 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="cicle"></div>
+        <div class="rectanle"></div>
+        <div class="rectanle"></div>
+        
+        <script type="text/javascript">
+        
+            $("#cicle").click(function(){
+                
+                alert("Circle was clicked");
+                
+            })
+            $(".rectanle").click(function(){
+                
+                alert("Rectangle was clicked");
+                
+            })
+            $("div").click(function(){
+                
+                alert("Div was clicked");
+                
+            })
+            
+        </script>
+    </body>
+</html>

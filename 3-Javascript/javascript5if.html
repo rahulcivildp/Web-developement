@@ -1,0 +1,36 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+   
+    
+    </head>
+    <body>
+      
+        <p>Write the magic word</p>
+        
+        <input type="text" id="write">
+        
+        <button id="click">Click me!</button>
+        
+    <script type="text/javascript">
+        
+        document.getElementById("click").onclick = function(){
+        
+        var x = "something";
+            
+        var y = document.getElementById("write").value;
+        
+        if (y == x){
+            
+            alert("you have won the lottery! :) ");
+        
+        }
+        
+        else {
+            alert("you are wrong! :( ")
+        }
+        }
+    </script>
+    </body>
+</html> 

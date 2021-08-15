@@ -1,0 +1,99 @@
+<html>
+    <head>
+    
+        <title>Jquery</title>
+        
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        
+        <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+        
+        <style type="text/css">
+           
+            #accordion {
+                
+                width: 300px;
+                float: left;
+            }
+            #sortable {
+                
+                width: 100px;
+                float: left;
+            }
+            #sortable h3{
+                
+                font-size: 12px;
+                text-decoration: underline;
+            }
+            #feedback { font-size: 1.4em; }
+            #selectable .ui-selecting { background-color: #FECA40; }
+            #selectable .ui-selected { background-color: #F39814; color: white; }
+            #selectable { list-style-type: none; margin: 0; padding: 0; width: 450px; float: left; }
+            #selectable li { margin: 3px; padding: 1px; float: left; width: 100px; height: 80px; font-size: 4em; text-align: center; }
+        </style>
+    </head>
+    <body>
+        <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                </p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>              
+            </div>
+            <h3>Section 4</h3>
+            <div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                </p>
+            </div>
+        </div>
+       
+        <ul id="sortable">
+            <h3>Sortable objects</h3>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+          <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+        </ul>
+        <ol id="selectable">
+                <h3>Selectable objects</h3>
+                <li class="ui-state-default">1</li>
+              <li class="ui-state-default">2</li>
+              <li class="ui-state-default">3</li>
+              <li class="ui-state-default">4</li>
+              <li class="ui-state-default">5</li>
+              <li class="ui-state-default">6</li>
+              <li class="ui-state-default">7</li>
+              <li class="ui-state-default">8</li>
+              <li class="ui-state-default">9</li>
+              <li class="ui-state-default">10</li>
+              <li class="ui-state-default">11</li>
+              <li class="ui-state-default">12</li>
+                </ol>
+        <script type="text/javascript">
+            
+            $( "#sortable" ).sortable();
+            
+            $( "#sortable" ).disableSelection();
+            
+            $( "#selectable" ).selectable();
+            
+            $( "#accordion" ).accordion({
+                
+                collapsible: true
+                
+            });
+            
+        </script>
+    </body>
+</html>

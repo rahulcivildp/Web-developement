@@ -1,0 +1,64 @@
+<html>
+    <head>
+    
+        <title>Jquery</title>
+        
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        
+        <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+        
+        <style type="text/css">
+           
+            #drop {
+                height: 150px;
+                width: 150px;
+                border: 1px solid grey;
+            }
+            #drag {
+                height: 60px;
+                width: 60px;
+                border: 1px solid red;
+                background-color: brown;
+            }
+            #drag p {
+                font-size: 10px;
+            }
+            .header {
+                background-color: blanchedalmond;
+                margin: 0;
+                text-align: center;
+            }
+            .highlight {
+                
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="drop">
+            <h3 class="header">Drop Here!</h3>
+        </div>
+        
+        <div id="drag">
+            <p class="header">Drag me around</p>
+        </div>
+       
+        <script type="text/javascript">
+          
+            $( "#drag" ).draggable();
+            
+            $( "#drop" ).droppable({
+                drop: function( event, ui ) {
+                    $( this )
+                        .addClass( "highlight" )
+                        .find( "h3" )
+                        .html( "Dropped!" );
+                }
+            });
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+        
+    </head>
+    <body>
+    
+        <p id="hello">Hello World!</p>
+        
+        <button id="myButton">Change text</button>
+        
+        <p id="secpara">javascript is ........ </p>
+        
+        <button id="myButton1">Change text</button>
+        
+        <p id="emptypara"></p>
+        
+        <button id="createpara">Create Paragraph</button>
+        
+        <p id="moretext">This is a text</p>
+        
+        <button id="styleText">Style Text</button>
+        
+    <script type="text/javascript">
+        
+        //this is one line comment.
+        
+        /*
+        
+        this is multiline comment.
+        
+        */
+        
+        document.getElementById("myButton").onclick = function() {
+            
+            document.getElementById("hello").innerHTML = "Hello Rahul";
+            
+        }
+        document.getElementById("myButton1").onclick = function() {
+            
+            document.getElementById("secpara").innerHTML = "i think " + document.getElementById("secpara").innerHTML + "boring";
+            
+        }
+        document.getElementById("createpara").onclick = function() {
+            
+            document.getElementById("emptypara").innerHTML = "<h1><ins>hello<ins><h1>";
+            
+        }
+        document.getElementById("styleText").onclick = function() {
+            
+            document.getElementById("moretext").style.textDecoration = "underline";
+            document.getElementById("moretext").style.color = "green";
+            document.getElementById("moretext").style.fontSize = "50px";
+            document.getElementById("moretext").style.border = "3px solid red";
+            document.getElementById("moretext").style.margin = "0";
+            document.getElementById("moretext").style.padding = "0";
+            document.getElementById("moretext").style.float = "right";
+            document.getElementById("moretext").style.backgroundColor = "yellow";
+        }
+        document.getElementById("myButton").onclick = function() {
+            
+            document.getElementById("moretext").style.display = "none";
+        }
+        
+    </script>
+    </body>
+</html>

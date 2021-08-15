@@ -1,0 +1,40 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <style>
+            #parain {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p id="paraout">A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.</p>
+        
+        <button id="fadeout">Click to Fadeout</button>
+        
+        <p id="parain">a set of words that is complete in itself, typically containing a subject and predicate, conveying a statement, question, exclamation, or command, and consisting of a main clause and sometimes one or more subordinate clauses.</p>
+        
+        <button id="fadein">Click to Fadeout</button>
+    
+        <script type="text/javascript">
+        
+            $("#fadeout").click(function(){
+                
+                $("#paraout").fadeOut("slow");
+            
+            })
+            
+            /* $("parain").hide(); */
+            
+            $("#fadein").click(function(){
+                
+                $("#parain").fadeIn("slow");
+            
+            })
+            
+        </script>
+    </body>
+</html>

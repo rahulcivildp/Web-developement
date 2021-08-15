@@ -1,0 +1,33 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <style>
+            #cicle {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border-radius: 100%;
+                margin: 0 20px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="cicle"></div>
+        <p id="sometext">This is some Text.</p>
+        <iframe src="https://www.codestars.com/">Codestars</iframe>
+        
+        <script type="text/javascript">
+        
+            $("#cicle").hover(function(){
+                
+                $("#sometext").html("Text some is This");
+                
+                $("iframe").attr("src", "https://en.wikipedia.org/wiki/Elon_Musk");
+            })
+            
+        </script>
+    </body>
+</html>

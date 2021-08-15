@@ -1,0 +1,60 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+   
+    
+    </head>
+    <body>
+      
+        <p id="numbers">How many fingures am i holding?</p>
+        
+        <input type="number" id="write">
+        
+        <button id="click">Guess!</button>
+        
+        <p id="empty"></p>
+        
+    <script type="text/javascript">
+        
+        function doGuess(guessTheNumber) {
+            
+             var y = Math.floor(Math.random() * 111111)
+
+                if( y == guessTheNumber ){
+
+                return(true);
+
+                } else {
+                    
+                return(false);
+
+                }
+        }
+        
+        document.getElementById("click").onclick = function() {
+        
+            var x = document.getElementById("write").value;
+            
+            var gotIt = false;
+            
+            var numberOfGuess = 1;
+            
+            while (gotIt == false){
+
+                if( doGuess(x) == true){
+                    
+                gotIt = true;
+
+                document.getElementById("empty").innerHTML = "The computer is right! :) :)" + " It took "+ numberOfGuess +" guesses"+"<br>"+ "The number is "+ x ;
+
+                } else {
+                    
+                numberOfGuess++;
+
+                }
+            }
+        }
+    </script>
+    </body>
+</html>  

@@ -1,0 +1,283 @@
+  <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top-border {
+            width: 100%;
+            border: 1px grey solid;
+        }
+        #topbar {
+            width: 1100px;
+            height: 34px;
+            margin: 0 auto;
+        }    
+        #logo {
+            float: left;
+        }
+        .topbar-section {
+            float: left;
+            border-left: 1px green solid;
+            height: 100%;    
+        }
+        #signin-image {
+            margin: 6px 10px;
+            height: 20px;
+            width: 22px;
+            float: left;
+        }
+        #signin-text {
+            font-weight: bold;
+            font-size: 90%;
+            position: relative;
+            top: 8px;
+            padding: 5px 15px;
+        }
+        #side-bar {
+            height: 100%;
+        }
+        #bell {
+            height: 50%;
+            width: auto;
+            margin: 8px 12px 8px 4px;
+        }
+        #bell-div {
+            float: left;
+        }
+        .news {
+            float: left;
+        }
+        .topbar-menu {
+            font-weight: bold;
+            font-size: 90%; 
+            padding: 9px 10px 0 10px;
+            height: 25px;
+        }
+        #down-arrow {
+            width: 15px;
+            margin-left: 10px;  
+        }
+        .search-bar {
+            float: right;
+        }
+        #search-bar {
+            width: 80%;
+            background-color: #a0a0a0;
+            border: none;
+            padding: 5px 0;
+            margin: 5px 0 5px 5px;
+            font-weight: bold;
+            float: left;
+        }
+        #search-icon {
+            margin: 5px 0;
+            width: 26px;
+        }
+        .clear {
+            clear: both;
+        }
+        #menu-bar-container {
+            background-color: #bb1819;
+            width: 100%;
+            height: 70px;
+        }
+        #menu-bar {
+            width: 1100px;
+            margin: 0 auto;
+        }
+        #news-text {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 40px;
+            font-weight: 200;
+            padding-top: 12px;
+            float: left;
+        }
+        #local-news{
+            border: 1px grey solid;
+            padding: 10px;
+            float: right;
+            margin: 12px 0;
+            background-color: #ad1717;
+        }
+        #local-news a {
+            font-size: 20px;
+            float: left;
+            color: white;
+            text-decoration-line: none;
+        }
+        #local-news a:hover {
+            text-decoration-line: underline;
+        }
+        #find-news {
+            float: left;
+        }
+        #locator {
+            padding-left: 10px;
+            width: 12px;
+        }
+        #menu-bar-2-container {
+            background-color: #ad1717;
+            width: 100%;
+            height: 34px;
+        }
+        #menu-bar-2 {
+            width: 1100px;
+            margin: 0 auto;
+            height: 18px;
+            padding: 8px 0;
+        }
+        #menu-bar-2 a{
+            text-decoration: none;
+            color: white;
+            padding: 0 10px;
+            border-right: 1px white solid; 
+        }
+        .no-border {
+            border: none !important;
+        }
+        #arrow-white {
+            width: 16px;
+        }
+        #page-container {
+            width: 1100px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        #new-article {
+            float: left;
+        }
+        #page-container h2{
+            font-size: 20px;
+            font-weight: 200;
+            width: 100px;
+            border-bottom: 3px solid #ad1717;
+        }
+        #main-article h3 {
+            padding: 0;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+        #main-article h3 a {
+            color: black;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        #main-article h3 a:hover {
+            color: #177f9e;
+        }
+        #article-container {
+            float: left;
+            width: 755px;
+            border-right: 1px solid grey;
+        }
+        #main-article {
+            float: left;
+            width: 735px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid grey;
+        }
+        #articles-summary {
+            float: left;
+            height: auto;
+            width: 250px;
+        }
+        #articles-summary h4{
+            float: left;
+            color: #5a5a5a;
+            margin: 0;
+        }
+        #articles-summary p {
+            float: left;
+            color: #5a5a5a;
+            margin: 6px 0;   
+        }
+        #articles-summary p a {
+            color: black;
+            padding: 0 12px;
+            text-decoration: none;
+        }
+        #articles-summary p a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        #article-pic {
+            float: right;
+            padding: 0;
+        }
+        #timer-img {
+            padding: 0 4px;
+            width: 14px;
+            float: left;
+        }
+        .cliped-link {
+            color: black;
+            text-decoration: none;
+            font-weight: 100;
+        }
+        .cliped-link:hover {
+            text-decoration: underline;
+        }
+        #list-items {
+            
+            float: left;
+            width: 250px;
+        }
+        #article-container ul li{
+            margin: 6px 0;
+        }
+        #some-border {
+            float: left;
+            width: 70px;
+            margin: 0;
+            padding: 0;
+            border-top: 2px solid #ad1717;
+        }
+        #watch-list {
+            margin: 0;
+            margin-left: 20px;
+            float: left;
+            width: 322px;
+        }
+        #watch-list h2 {
+            margin: 0;
+            margin-bottom: 20px;
+            border: none !important;
+        }
+        .vdo-playlist {
+            float: left;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .vdo-playlist h3 {
+            font-size: 14px;
+            float: left;
+            margin: 0;
+            padding-left: 8px;
+            width: 194px;
+        }
+        .vdo-playlist iframe {
+            float: left;
+        }
+        .vdo-summary p {
+            float: left;
+            color: #5a5a5a;
+            margin: 10px 0; 
+            font-size: 12px;
+        }
+        .vdo-summary p a {
+            color: black;
+            padding: 0 12px;
+            text-decoration: none;
+        }
+        .vdo-summary p a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        .vdo-summary {
+            float: left;
+            width: 194px;
+        }
+    </style>

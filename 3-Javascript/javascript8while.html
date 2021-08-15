@@ -1,0 +1,30 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+   
+    
+    </head>
+    <body>
+      
+        <p id="someArray"></p>
+        
+    <script type="text/javascript">
+        
+        var tweets = ["good morning","good noon","good afternoon","good evening","good night :)"]
+        
+        var x = "";
+        
+        var i = 0;
+        
+        while (i < tweets.length) {
+            
+            x += tweets[i] + "<br>";
+               
+            i++;
+        }
+            document.getElementById("someArray").innerHTML = x;
+        
+    </script>
+    </body>
+</html>  

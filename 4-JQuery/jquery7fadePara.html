@@ -1,0 +1,58 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+        <p id="paraout">A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.</p>
+        
+        <button id="fadeout">Toggle Text</button>
+    
+        <script type="text/javascript">
+            
+            var display = true;
+            
+            $("#fadeout").click(function(){
+                
+               if(display){
+                    
+                    $("#paraout").fadeOut("slow", function(){
+                        
+                        display = false;
+                        
+                    });
+                    
+                }else {
+                    
+                    $("#paraout").fadeIn("slow");
+                    
+                }
+            
+            })
+            
+            /* Both works ...*/
+        
+            /*$("#fadeout").click(function(){
+                
+               if($("#paraout").css("display") == "none"){
+                    
+                    $("#paraout").fadeIn("slow");
+                    
+                }else {
+                    
+                    $("#paraout").fadeOut("slow");
+                    
+                }
+            
+            })
+            
+            /* $("parain").hide(); */
+            
+        </script>
+    </body>
+</html>

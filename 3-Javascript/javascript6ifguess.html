@@ -1,0 +1,40 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+   
+    
+    </head>
+    <body>
+      
+        <p>How many fingures am i holding up?</p>
+        
+        <input type="text" id="write">
+        
+        <button id="click">Guess!</button>
+        
+    <script type="text/javascript">
+        
+        document.getElementById("click").onclick = function(){
+            
+        var x = Math.floor(Math.random() * 2);
+            
+        var y = document.getElementById("write").value;
+        
+           if (y == x){
+            
+            alert("you have won the lottery! :) ");
+        
+                }
+        
+            else {
+            
+            alert("you are wrong! :( " + "the number is " + x);
+            
+            }
+            
+        }
+            
+    </script>
+    </body>
+</html> 

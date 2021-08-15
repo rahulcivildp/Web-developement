@@ -1,0 +1,74 @@
+<html>
+    <head>
+    
+        <title>Jquery</title>
+        
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        
+        <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+        
+        <style type="text/css">
+            #draggable { 
+                float: right;
+                position: absolute;
+                top: 500px;
+                right: 30px;
+                width: 50px; 
+                height: 50px; 
+                padding: 0.5em; 
+                background-color: aquamarine;
+                border-radius: 50%;
+                border: 2px solid black;
+            }
+            #draggable p {
+                position: relative;
+                left: 8px;
+            }
+            #resizable { 
+                border: 1px solid grey;
+                width: 150px; 
+                height: 150px; 
+                padding: 0.5em; 
+            }
+            #resizable h3 { 
+                text-align: center; 
+                margin: 0; 
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="resizable" class="ui-widget-content">
+            <h3 class="ui-widget-header" style="background-color: bisque">Resizable</h3>
+        </div>
+        
+        <div id="draggable" class="ui-widget-content">
+            <p>Chat!</p>
+        </div>
+       
+        <script type="text/javascript">
+            $( function() {
+                
+                $( "#draggable" ).draggable({ axis: "y" },{ containment: "body", scroll: false });
+                    
+                /* $( "#draggable" ).draggable({ containment: "body", scroll: false }); */
+            });
+            
+            $( "#resizable" ).resizable({
+                    
+                    resize: function( event, ui ) {
+                    
+                    if($("#resizable").width() > 300) {
+                        
+                        alert("Big enough!");
+                        
+                    }
+                }
+                
+            });
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+<style>
+.copy_right_icons{
+  text-align: left;
+}
+.copy_right_icons li {
+    list-style-type: none;
+}
+.copy_right_icons li a {
+    width: 21px;
+    height: 21px;
+    background: #121921;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 5px;
+    color: #07162d;
+    border-radius: 5px;
+    padding: 1px;
+}
+.copy_right_icons li a:nth-child(1) img {
+width: 24px!important;
+    height: 24px!important;
+}
+.copy_right_icons li a img {
+     width: 24px;
+    position: relative;
+    bottom: 6px;
+
+}
+</style>
+<footer>
+<div class="footersection-wrp">
+<div class="container">
+<div class="footer-row1">
+<div class="row">
+<div class="col-xs-12 col-md-5"><em class="icon icon-mail4"></em> Subscribe to our new offers</div>
+<div class="col-xs-6 col-md-4"><div class="footer-box">Browse Hotels By Country</div></div>
+<div class="col-xs-6 col-md-3">
+	<div class="footer-social">
+		<div class="copy_right_icons">
+                        <li>
+                          <a href="https://www.facebook.com/Air2fly-106039204946861" mce_href="https://www.facebook.com/Air2fly-106039204946861" target="_blank"><img src="/ibe/images/facebook.png" alt="logo"></a>
+                           <a href="https://web.whatsapp.com/" mce_href="https://web.whatsapp.com/" target="_blank"><img src="/ibe/images/whatsapp.png" alt="logo"></a>
+                           <a href=""><img src="/ibe/images/twitter.png" alt="logo"></a>
+                           <a href=""><img src="/ibe/images/instagram.png" alt="logo"></a>
+                           <a href=""><img src="/ibe/images/linkedin.png" alt="logo"></a>
+                           <a href=""><img src="/ibe/images/google-plus.png" alt="logo"></a>
+                        </li>
+                   </div>
+	</div>
+</div>
+</div>
+</div>
+<div class="footer-row2">
+<div class="row">
+<div class="col-md-5">
+<div class="footer-list">
+<div class="row">
+<div class="col-md-6"><h3><br></h3>
+<ul>
+<li><a href="/static.action?page=customer-support">Customer Support</a></li>
+<li><a href="/static.action?page=contact-us">Contact us</a></li>
+<li><a href="/static.action?page=about-us">About us</a></li>
+<li><a href="/static.action?page=user-agreement">User Agreement</a></li>
+</ul>
+</div>
+<div class="col-md-6"><h3>&nbsp;</h3>
+<ul>
+<!--<li><a href="/static.action?page=contact_form">Contact Form</a></li>-->
+<li><a href="/static.action?page=bank_details">Bank Details</a></li>
+<!--<li><a href="/static.action?page=group-booking">Group Booking</a></li>-->
+<li><a href="/static.action?page=service">Services</a></li>
+</ul></div>
+</div>
+</div>
+
+</div>
+<div class="col-md-4"><div class="mobile-app"><h5>Flight &amp; Hotels in one place </h5></div><div>Download <b>Air2fly</b> app.. Easier and Faster</div>
+<div class="mobile-img">
+  <a href="#" class="ios"></a>  
+    <a href="#" class="android"></a>
+</div>
+</div>
+<div class="col-md-3">
+<div class="secure-wrp">
+<h4>Member of</h4>
+<span><img src="/ibe/images/footer/iata.png" width="" height="" alt=""></span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-row3">
+<div class="row">
+<div class="col-md-5"><ul class="footer-txt">
+
+
+
+<li><a href="/static.action?page=faq">FAQ</a></li>
+<li><a href="/static.action?page=payment-security">Payment Security</a></li>
+<li><a href="/static.action?page=terms-of-use-and-service">Terms of Use</a></li>
+<li><a href="/static.action?page=privacy-policy">Privacy Policy</a></li>
+ 
+</ul></div>
+<div class="col-md-4"> <img src="/ibe/images/footer/payment-img.png" width="" height="" alt=""></div>
+<div class="col-md-3 text-right align_css">2020 ecaretechlabs</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<script>
+var elements = document.querySelectorAll('.gsc-table-result td a.gs-title');
+// elements.forEach(function(element) {
+//     //element.doSomething();
+//     console.log(element);
+//     var test = element.innerHTML;
+//     console.log(test);
+// });
+
+function walkText(node) {
+  if (node.nodeType == 3) {
+    node.data = node.data.replace(/ecaretechlabs/ig, str);
+  }
+  if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
+    for (var i = 0; i < node.childNodes.length; i++) {
+      walkText(node.childNodes[i]);
+    }
+  }
+}
+
+
+var str = window.location.host;
+
+
+
+walkText(document.body);
+
+</script>
+
+
+</footer>

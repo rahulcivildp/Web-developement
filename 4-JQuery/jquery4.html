@@ -1,0 +1,38 @@
+<html>
+    <head>
+    
+        <title>Javascript</title>    
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <style>
+            #cicle {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border-radius: 100%;
+                margin: 10px;
+            }
+            .rectanle {
+                width: 100px;
+                height: 100px;
+                background-color: aqua;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cicle"></div>
+        <div class="rectanle" id="sq1"></div>
+        <div class="rectanle" id="sq2"></div>
+    
+        <script type="text/javascript">
+        
+            $("div").click(function(){
+                
+                $(this).css("display", "none");
+                
+                alert("you clicked on " + $(this).attr("id"));
+            
+            })
+        </script>
+    </body>
+</html>
