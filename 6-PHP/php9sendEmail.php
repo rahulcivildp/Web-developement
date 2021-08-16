@@ -6,7 +6,7 @@ $subject = "This is a subject line";
 
 $body = "This body contains some messages";
 
-$header = "From: rahulcivildp@gmail.com";
+$header = "From: soumitrag636@gmail.com";
     
 if (mail($emailTo, $subject, $body, $header)) {
     
@@ -14,9 +14,8 @@ if (mail($emailTo, $subject, $body, $header)) {
     
 }else {
     
-    echo "Error!";
+    echo "Error accured!";
     
 }
-
 
 ?>
